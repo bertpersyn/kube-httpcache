@@ -95,5 +95,12 @@ func (v *VarnishController) generateArgs() []string {
 			args = append(args, val)
 		}
 	}
+
+	if v.AdditionalOptions != "" {
+		for _, val := range strings.Split(v.AdditionalOptions, ";") {
+			args = append(args, val)
+		}
+	}
+
 	return args
 }
