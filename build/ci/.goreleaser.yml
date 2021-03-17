@@ -27,11 +27,11 @@ changelog:
 dockers:
   -
     image_templates:
-      - quay.io/mittwald/kube-httpcache:latest
-      - quay.io/mittwald/kube-httpcache:v{{ .Major }}
-      - quay.io/mittwald/kube-httpcache:v{{ .Major }}.{{ .Minor }}
-      - quay.io/mittwald/kube-httpcache:{{ .Tag }}
-      - quay.io/mittwald/kube-httpcache:stable
+      - quay.io/bertpersyn/kube-httpcache:latest
+      - quay.io/bertpersyn/kube-httpcache:v{{ .Major }}
+      - quay.io/bertpersyn/kube-httpcache:v{{ .Major }}.{{ .Minor }}
+      - quay.io/bertpersyn/kube-httpcache:{{ .Tag }}
+      - quay.io/bertpersyn/kube-httpcache:stable
     dockerfile: build/package/docker/GoReleaser.Dockerfile
     binaries:
       - kube-httpcache
